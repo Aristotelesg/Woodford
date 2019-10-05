@@ -1,0 +1,1 @@
+﻿@Dashboard,@Map,@activity,@Tourplan,account,competitor,contact,lead,opportunity,quote,salesorder,invoice,product,incident,@CallImport,@Setup,owner,@About

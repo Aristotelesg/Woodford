@@ -1,0 +1,98 @@
+﻿<fetchcollection>
+  <fetch version="1.0">
+    <entity name="account">
+      <filter type="and">
+        <condition attribute="statuscode" operator="ne" value="2"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="contact">
+      <filter type="and">
+        <condition attribute="statuscode" operator="ne" value="2"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="quote">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="30"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="salesorder">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="30"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="invoice">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="30"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="opportunity">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="60"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="email">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="60"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="phonecall">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="60"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="task">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="60"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="appointment">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="60"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="serviceappointment">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="60"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="incident">
+      <filter type="and">
+        <condition attribute="modifiedon" operator="last-x-days" value="60"/>
+      </filter>
+    </entity>
+  </fetch>
+  <fetch version="1.0">
+    <entity name="workflow">
+      <filter type="and">
+        <condition attribute="statuscode" operator="eq" value="2"/>
+        <condition attribute="category" operator="eq" value="4"/>
+        <filter type="or">
+          <condition attribute="workflowid" operator="eq" value="919e14d1-6489-4852-abd0-a63a6ecaac5d"/>
+          <condition attribute="workflowid" operator="eq" value="3e8ebee6-a2bc-4451-9c5f-b146b085413a"/>
+        </filter>
+      </filter>
+    </entity>
+  </fetch>
+</fetchcollection>
